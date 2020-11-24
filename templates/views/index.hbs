@@ -12,9 +12,15 @@
         {{>header}}
 
         <p>Use this site to get live weather!</p>
-
+        <p>Please choose the Unit Parameter you would like to use.</p>
         <form>
-            <input  placeholder="Location">
+            <input type="radio" id="m" name="units" value="Metric" checked="checked">
+            <label for="m">Metric</label>
+            <input type="radio" id="s" name="units" value="Scientific">
+            <label for="s">Scientific</label>
+            <input type="radio" id="f" name="units" value="Fahrenheit">
+            <label for="f">Fahrenheit</label><br>
+            <input  placeholder="Location" id="search">
             <button >Search</button>
         </form>
 
